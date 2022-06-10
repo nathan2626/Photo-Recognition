@@ -14,6 +14,7 @@
 		287E8E54283A9B9700D23317 /* Detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287E8E53283A9B9700D23317 /* Detector.swift */; };
 		287E8E56283A9C2700D23317 /* Detector.m in Sources */ = {isa = PBXBuildFile; fileRef = 287E8E55283A9C2700D23317 /* Detector.m */; };
 		287E8E58283A9FC300D23317 /* CheeseClassifier 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 287E8E57283A9FC300D23317 /* CheeseClassifier 1.mlmodel */; };
+		288111F52848C9E20046D9FC /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288111F42848C9E20046D9FC /* UIImage+CVPixelBuffer.swift */; };
 		32F12A4B0B710575917D196E /* libPods-PhotoRecognition-PhotoRecognitionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F21EABDC4BC7BAF0AE4CE9 /* libPods-PhotoRecognition-PhotoRecognitionTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		EC0FBFA7797DCFB8B41FCA8A /* libPods-PhotoRecognition.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3028A9650947EB18CC3FEAF /* libPods-PhotoRecognition.a */; };
@@ -44,6 +45,7 @@
 		287E8E53283A9B9700D23317 /* Detector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detector.swift; sourceTree = "<group>"; };
 		287E8E55283A9C2700D23317 /* Detector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Detector.m; sourceTree = "<group>"; };
 		287E8E57283A9FC300D23317 /* CheeseClassifier 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "CheeseClassifier 1.mlmodel"; sourceTree = "<group>"; };
+		288111F42848C9E20046D9FC /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
 		54F21EABDC4BC7BAF0AE4CE9 /* libPods-PhotoRecognition-PhotoRecognitionTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoRecognition-PhotoRecognitionTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A324ACEBF403E392E4A8C3D /* Pods-PhotoRecognition-PhotoRecognitionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoRecognition-PhotoRecognitionTests.release.xcconfig"; path = "Target Support Files/Pods-PhotoRecognition-PhotoRecognitionTests/Pods-PhotoRecognition-PhotoRecognitionTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = PhotoRecognition/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				288111F42848C9E20046D9FC /* UIImage+CVPixelBuffer.swift */,
 			);
 			name = PhotoRecognition;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				288111F52848C9E20046D9FC /* UIImage+CVPixelBuffer.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				287E8E54283A9B9700D23317 /* Detector.swift in Sources */,
 				287E8E58283A9FC300D23317 /* CheeseClassifier 1.mlmodel in Sources */,
@@ -578,6 +582,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				COREML_CODEGEN_LANGUAGE = Swift;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
@@ -596,7 +601,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -643,6 +648,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				COREML_CODEGEN_LANGUAGE = Swift;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
@@ -654,7 +660,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
